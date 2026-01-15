@@ -64,7 +64,7 @@ class Circle:
 
         self.radius -= self.pop_speed
         if self.radius < 1:
-            game.popping_circles.remove(self)
+            game.popping_circles.remove(self)  # Удаляем лопнувший кружок из списка
             return
 
         screen.draw.filled_circle((self.x, self.y), self.radius, self.color)
